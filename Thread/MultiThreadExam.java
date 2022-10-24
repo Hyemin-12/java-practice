@@ -44,9 +44,9 @@ public class MultiThreadExam extends Thread{
         MultiThreadExam b = new MultiThreadExam("B", sum, 5);
         
         // 우선순위
-        a.setPriority(8);
+        a.setPriority(1);
         b.setPriority(10);
-        
+
         // 시작
         a.start();
         b.start();

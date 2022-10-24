@@ -39,7 +39,7 @@ class Bank {
 class Family1 extends Thread { // Thread를 상속받아서 구현
     public void run() { // Thread에서 해야 할 작업을 구현
         synchronized (BankExam.myBank) {
-            BankExam.myBank.saveMonry(5000);
+            BankExam.myBank.saveMoney(5000);
         }
         System.out.println("saveMoney(5000) : " + BankExam.myBank.getMoney());
     } // end of run
