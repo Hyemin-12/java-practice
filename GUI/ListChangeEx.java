@@ -18,10 +18,8 @@ public class ListChangeEx extends JFrame {
         setTitle("리스트 변경 예제");
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        Container c = getContentPane();
-
-        c.setLayout(new FlowLayout());
+        Container c = getContentPane(); // 컨텐트팬 얻기
+        c.setLayout(new FlowLayout()); // 배치관리자 설정
 
         c.add(new JLabel("이름 입력 후 <Enter> 키"));
         c.add(tf);
@@ -32,7 +30,7 @@ public class ListChangeEx extends JFrame {
         nameList.setVisibleRowCount(5);
         nameList.setFixedCellWidth(100);
 
-        c.add(new JScrollPane(nameList));
+        c.add(new JScrollPane(nameList)); // 스크롤이 있는 패널 추가
 
         setSize(300, 300);
         setVisible(true);
